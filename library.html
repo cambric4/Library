@@ -8,6 +8,29 @@
 </head>
 <body>
     <div class="big-container">
+        <dialog id="dialog">
+            <form method="dialog" id="book-form">
+                <label>Title: 
+                    <input type="text" id="book-title" required>
+                </label>
+                <label>Author: 
+                    <input type="text" id="book-author" required>
+                </label>
+                <label>Year Published:
+                    <input type="text" id="book-year">
+                </label>
+                <label>No. of Pages: 
+                    <input type="text" id="book-pages">
+                </label>
+                <label>Read? 
+                    <input type="checkbox" id="book-read">
+                </label>
+                <menu>
+                    <button type="submit">Submit</button>
+                    <button type="button" id="close-dialog">Cancel</button>
+                </menu>
+            </form>
+        </dialog>
         <div class="header">
             <div class="header1">
                 <div class="search">
@@ -15,7 +38,7 @@
                     <input>
                 </div>
                 <div class="right1">
-                    <img >
+                    <img src="book-open.svg">
                     <h3 class="name">Cambri Curtis</h3>
                 </div>
             </div>
@@ -24,37 +47,28 @@
                     <h1 class="prompt">Hello!</h1>
                 </div>
                 <div class="right2">
-                    <button class="filter">Filter</button>
-                    <button class="upload">Upload</button>
+                    <button class="upload" id="open-dialog">Add Book</button>
                     <button class="share">Share</button>
                 </div>
             </div>
         </div>
         <div class="sidebar">
             <div class="sheader">
-                <img >
+                <img src="library.svg">
                 <h2 class="webtitle">Cambri's Library</h2>
             </div>
             <div class="tabs">
                 <div class="top-tabs">
-                    <img src="home.svg">
-                    <h4 class="home">Home</h4>
-                    <img src="account.svg">
-                    <h4 class="books">Books</h4>
-                    <img src="message.svg">
-                    <h4 class="messages">Messages</h4>
-                    <img src="history.svg">
-                    <h4 class="histoy">History</h4>
-                    <img src="list-box-outline.svg">
-                    <h4 class="tasks">To Be Read</h4>
+                    <button class="home"><img src="home.svg"/>Home</button>
+                    <button class="booksimg"><img src="book-open.svg"/>Books</button>
+                    <button class="messages"><img src="message.svg">Messages</button>
+                    <button class="histoy"><img src="history.svg">History</button>
+                    <button class="tasks"><img src="list-box-outline.svg">To Be Read</button>
                 </div>
                 <div class="bottom-tabs">
-                    <img src="cogs.svg">
-                    <h4 class="settings">Settings</h4>
-                    <img src="face-agent.svg">
-                    <h4 class="support">Support</h4>
-                    <img src="shield-account.svg">
-                    <h4 class="privacy">Privacy</h4>
+                    <button class="settings"><img src="cogs.svg">Settings</button>
+                    <button class="support"><img src="face-agent.svg">Support</button>
+                    <button class="privacy"><img src="shield-account.svg">Privacy</button>
                 </div>
             </div>
         </div>
@@ -62,39 +76,7 @@
             <div class="books">
                 <h1>Your Library</h1>
                 <div class="book-container">
-                    <div class="book1">
-                        <h2 class="book-header"></h2>
-                        <p class="book-desc"></p>
-                    </div>
-                    <div class="book2">
-                        <h2 class="book-header"></h2>
-                        <p class="book-desc"></p>
-                    </div>
-                    <div class="book3">
-                        <h2 class="book-header"></h2>
-                        <p class="book-desc"></p>
-                    </div>
-                    <div class="book4">
-                        <h2 class="book-header"></h2>
-                        <p class="book-desc"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="next-book">
-                <h1>To Be Read List</h1>
-                <div class="tbr-books">
-                    <div class="tbr1">
-                        <h2 class="tbr-header"></h2>
-                        <p class="tbr-note"></p>
-                    </div>
-                    <div class="tbr2">
-                        <h2 class="tbr-header"></h2>
-                        <p class="tbr-note"></p>
-                    </div>
-                    <div class="tbr3">
-                        <h2 class="tbr-header"></h2>
-                        <p class="tbr-note"></p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
