@@ -10,6 +10,7 @@
     <div class="big-container">
         <dialog id="dialog">
             <form method="dialog" id="book-form">
+                <div id="error-container"></div> 
                 <label>Title: 
                     <input type="text" id="book-title" required>
                 </label>
@@ -17,10 +18,10 @@
                     <input type="text" id="book-author" required>
                 </label>
                 <label>Year Published:
-                    <input type="text" id="book-year">
+                    <input type="text" id="book-year" required>
                 </label>
                 <label>No. of Pages: 
-                    <input type="text" id="book-pages">
+                    <input type="text" id="book-pages" required>
                 </label>
                 <label>Read? 
                     <input type="checkbox" id="book-read">
@@ -29,7 +30,7 @@
                     <button type="submit">Submit</button>
                     <button type="button" id="close-dialog">Cancel</button>
                 </menu>
-            </form>
+            </form>            
         </dialog>
         <div class="header">
             <div class="header1">

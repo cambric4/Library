@@ -1,15 +1,15 @@
 const myLibrary = [];
 
 function Book(title, author, year, pages, status) {
-    this.title= title;
-    this.author= author;
-    this.year= year;
-    this.pages= pages;
-    this.status= status;
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    this.pages = pages;
+    this.status = status;
 }
 
 Book.prototype.toggleReadStatus = function () {
-    this.status =!this.status;
+    this.status = !this.status;
 };
 
 const book1 = new Book("Fourth Wing", "Rebecca Yarros", 2023, 528, true);
@@ -22,9 +22,9 @@ function addBookToLibrary(title, author, year, pages, status) {
     myLibrary.push(book);
 }
 
-console.log(myLibrary)
+console.log(myLibrary);
 
-//Create function to display added book to page
+// Create function to display added book to page
 const bookcontainer = document.querySelector(`.book-container`);
 function displayBook() {
     bookcontainer.innerHTML = ``;
@@ -71,6 +71,7 @@ function displayBook() {
 
 
 displayBook();
+
 
 //Event listeners to open a dialog modal when the 'Add Book' button is pressed
 const dialog = document.getElementById(`dialog`);
